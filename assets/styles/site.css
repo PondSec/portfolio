@@ -229,6 +229,10 @@ h3 { margin-bottom: .5rem; font-size: 1.12rem; letter-spacing: -.02em; line-heig
 .credential h3 { margin: 0; font-size: 1rem; }
 .credential-date { color: var(--ink-soft); font-size: .86rem; }
 .credential a { color: var(--accent-dark); font-size: .83rem; font-weight: 750; }
+.credential-details { margin-top: 1.25rem; }
+.credential-details summary { display: inline-flex; align-items: center; padding: .65rem 0; color: var(--accent-dark); cursor: pointer; font-size: .88rem; font-weight: 800; }
+.credential-details summary::marker { color: var(--accent); }
+.credential-details[open] summary { margin-bottom: .6rem; }
 
 .career-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 4rem; }
 .career-grid > p { max-width: 410px; color: var(--ink-soft); }
