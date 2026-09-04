@@ -7,14 +7,14 @@
     <meta name="author" content="Joshua Dean Pond">
     <meta name="theme-color" content="#050b16">
     <meta name="robots" content="index, follow, max-image-preview:large">
-    <link rel="canonical" href="https://portfolio.pondsec.com/">
+    <link rel="canonical" href="https://portfolio.pondsec.com/home">
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
     <meta property="og:locale" content="de_DE">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Joshua Pond Portfolio">
     <meta property="og:title" content="Joshua Pond | Netzwerkadministration &amp; Systemintegration">
     <meta property="og:description" content="Berufspraxis, technische Projekte, Cisco-Zertifikate und veröffentlichte Forschungsarbeit.">
-    <meta property="og:url" content="https://portfolio.pondsec.com/">
+    <meta property="og:url" content="https://portfolio.pondsec.com/home">
     <meta property="og:image" content="https://portfolio.pondsec.com/assets/images/og-joshua-pond.png">
     <meta property="og:image:secure_url" content="https://portfolio.pondsec.com/assets/images/og-joshua-pond.png">
     <meta property="og:image:type" content="image/png">
@@ -37,27 +37,27 @@
         "@graph": [
           {
             "@type": "WebSite",
-            "@id": "https://portfolio.pondsec.com/#website",
-            "url": "https://portfolio.pondsec.com/",
+            "@id": "https://portfolio.pondsec.com/home#website",
+            "url": "https://portfolio.pondsec.com/home",
             "name": "Joshua Pond Portfolio",
             "inLanguage": "de-DE",
-            "publisher": {"@id": "https://portfolio.pondsec.com/#person"}
+            "publisher": {"@id": "https://portfolio.pondsec.com/home#person"}
           },
           {
             "@type": "WebPage",
-            "@id": "https://portfolio.pondsec.com/#webpage",
-            "url": "https://portfolio.pondsec.com/",
+            "@id": "https://portfolio.pondsec.com/home#webpage",
+            "url": "https://portfolio.pondsec.com/home",
             "name": "Joshua Pond | Netzwerkadministration & Systemintegration",
             "description": "Berufspraxis, technische Projekte, Cisco-Zertifikate und veröffentlichte Forschungsarbeit.",
-            "isPartOf": {"@id": "https://portfolio.pondsec.com/#website"},
-            "about": {"@id": "https://portfolio.pondsec.com/#person"},
+            "isPartOf": {"@id": "https://portfolio.pondsec.com/home#website"},
+            "about": {"@id": "https://portfolio.pondsec.com/home#person"},
             "inLanguage": "de-DE"
           },
           {
             "@type": "Person",
-            "@id": "https://portfolio.pondsec.com/#person",
+            "@id": "https://portfolio.pondsec.com/home#person",
             "name": "Joshua Dean Pond",
-            "url": "https://portfolio.pondsec.com/",
+            "url": "https://portfolio.pondsec.com/home",
             "image": "https://portfolio.pondsec.com/assets/images/joshua-pond.jpg",
             "jobTitle": "Netzwerkadministrator",
             "address": {"@type": "PostalAddress", "addressLocality": "Wolfenbüttel", "addressRegion": "Niedersachsen", "addressCountry": "DE"},
@@ -84,10 +84,10 @@
         </div>
         <nav class="site-nav" id="site-navigation" data-site-nav aria-label="Hauptnavigation">
           <a href="#start" aria-current="page"><i data-feather="home" aria-hidden="true"></i><span>Start</span></a>
-          <a href="profile.html"><i data-feather="user" aria-hidden="true"></i><span>Profil</span></a>
-          <a href="projects.html"><i data-feather="layers" aria-hidden="true"></i><span>Projekte</span></a>
-          <a href="research.html"><i data-feather="book-open" aria-hidden="true"></i><span>Forschung</span></a>
-          <a href="credentials.html"><i data-feather="award" aria-hidden="true"></i><span>Nachweise</span></a>
+          <a href="/profil"><i data-feather="user" aria-hidden="true"></i><span>Profil</span></a>
+          <a href="/projekte"><i data-feather="layers" aria-hidden="true"></i><span>Projekte</span></a>
+          <a href="/forschung"><i data-feather="book-open" aria-hidden="true"></i><span>Forschung</span></a>
+          <a href="/zertifikate"><i data-feather="award" aria-hidden="true"></i><span>Nachweise</span></a>
           <a href="#kontakt"><i data-feather="mail" aria-hidden="true"></i><span>Kontakt</span></a>
         </nav>
         <div class="sidebar-links" aria-label="Direkte Links">
@@ -108,8 +108,8 @@
             <p class="hero-titleline hero-titleline--typed">Ich arbeite an <span class="typing-wrap" aria-hidden="true"><span data-typewriter data-words="Netzwerkadministration|Systemintegration|Infrastruktur-Betrieb|Firewall- und VPN-Konzepten|technischer Dokumentation">Netzwerkadministration</span><span class="typewriter-cursor">|</span></span><span class="visually-hidden">Netzwerkadministration, Systemintegration und Infrastruktur-Betrieb.</span></p>
             <p class="lede">Fachinformatiker für Systemintegration mit Berufserfahrung im IT-Betrieb und aktueller Tätigkeit in der Netzwerkadministration. Diese Seite bündelt Arbeitsproben, nachvollziehbare Nachweise und eine veröffentlichte technische Forschungsarbeit.</p>
             <div class="hero-actions">
-              <a class="button" href="projects.html"><span>Projekte ansehen</span><i data-feather="arrow-right" aria-hidden="true"></i></a>
-              <a class="button button--quiet" href="profile.html"><span>Profil &amp; Werdegang</span><i data-feather="user" aria-hidden="true"></i></a>
+              <a class="button" href="/projekte"><span>Projekte ansehen</span><i data-feather="arrow-right" aria-hidden="true"></i></a>
+              <a class="button button--quiet" href="/profil"><span>Profil &amp; Werdegang</span><i data-feather="user" aria-hidden="true"></i></a>
             </div>
           </div>
           <aside class="hero-aside" aria-label="Kurzprofil">
@@ -141,20 +141,20 @@
             <article class="project">
               <figure class="project-visual"><img src="assets/images/ponduin-workflow.webp" alt="Screenshot eines Ponduin-Workflows mit Recherche- und Website-Aufgabe" loading="lazy"></figure>
               <div><p class="project-meta">Local-first Agent · Rust</p><h3>Ponduin</h3><p>Lokaler, erweiterbarer Agent für Code, Terminal, Dateien und technische Workflows – mit Desktop-Anwendung, CLI und Rust-Runtime.</p></div>
-              <div class="project-links"><a href="projects.html#ponduin">Projektprofil</a><a href="https://github.com/PondSec/ponduin" target="_blank" rel="noopener noreferrer">Repository öffnen</a></div>
+              <div class="project-links"><a href="/projekte#ponduin">Projektprofil</a><a href="https://github.com/PondSec/ponduin" target="_blank" rel="noopener noreferrer">Repository öffnen</a></div>
             </article>
             <article class="project">
               <figure class="project-visual"><img src="assets/images/inventory-pro-dashboard.png" alt="Echte Demoansicht von Inventory Pro mit Asset- und Service-Übersicht" loading="lazy"></figure>
               <div><p class="project-meta">IT-Betrieb · Python / Flask</p><h3>Inventory Pro</h3><p>Inventar-, Ticket- und Wissensplattform mit Asset-Lifecycle, Rollen und Berechtigungen, TOTP-MFA sowie Audit-Verläufen.</p></div>
-              <div class="project-links"><a href="projects.html#inventory-pro">Projektprofil</a><a href="https://github.com/PondSec/inventorypro" target="_blank" rel="noopener noreferrer">Repository öffnen</a></div>
+              <div class="project-links"><a href="/projekte#inventory-pro">Projektprofil</a><a href="https://github.com/PondSec/inventorypro" target="_blank" rel="noopener noreferrer">Repository öffnen</a></div>
             </article>
             <article class="project">
               <figure class="project-visual project-visual--logo"><img src="assets/images/joeys-slimeventure-logo.png" alt="Logo von Joey's Slimeventure" loading="lazy"></figure>
               <div><p class="project-meta">Produktentwicklung · Godot</p><h3>Joey's Slimeventure</h3><p>Öffentlich entwickeltes 2D-Spielprojekt mit Browser-Demo, Steam-Seite und offenem Repository auf Basis der Godot Engine.</p></div>
-              <div class="project-links"><a href="projects.html#joeys-slimeventure">Projektprofil</a><a href="https://github.com/PondSec/JoeysSlimeventure" target="_blank" rel="noopener noreferrer">Repository öffnen</a></div>
+              <div class="project-links"><a href="/projekte#joeys-slimeventure">Projektprofil</a><a href="https://github.com/PondSec/JoeysSlimeventure" target="_blank" rel="noopener noreferrer">Repository öffnen</a></div>
             </article>
           </div>
-          <p class="link-row" style="margin-top: 1.5rem"><a class="button button--quiet" href="projects.html">Alle technischen Projektprofile</a></p>
+          <p class="link-row" style="margin-top: 1.5rem"><a class="button button--quiet" href="/projekte">Alle technischen Projektprofile</a></p>
         </div>
       </section>
 
@@ -166,7 +166,7 @@
             <h2 id="research-title">Adaptives Load Balancing auf Edge-Hardware</h2>
             <p class="research-subtitle">Untersuchung mit NGINX, Python und Raspberry-Pi-Hardware – veröffentlicht auf Zenodo mit DOI.</p>
             <p class="research-copy">Die Fallstudie führt durch Fragestellung, Laboraufbau, Vergleichsverfahren, Kennzahlen und die Grenzen der Ergebnisse.</p>
-            <div class="hero-actions"><a class="button button--quiet" href="research.html">Fallstudie lesen</a><a class="button button--quiet" href="https://doi.org/10.5281/zenodo.18340275" target="_blank" rel="noopener noreferrer">DOI auf Zenodo</a></div>
+            <div class="hero-actions"><a class="button button--quiet" href="/forschung">Fallstudie lesen</a><a class="button button--quiet" href="https://doi.org/10.5281/zenodo.18340275" target="_blank" rel="noopener noreferrer">DOI auf Zenodo</a></div>
           </div>
           <div class="metric-stack" aria-label="Forschungsergebnisse laut Veröffentlichung">
             <div class="metric"><strong>+14,7%</strong><span>Effizienzgewinn gegenüber Round Robin im dokumentierten Laborvergleich.</span></div>
@@ -187,7 +187,7 @@
             <article class="evidence"><h3>Systemintegration &amp; Betrieb</h3><p>Server- und Client-Betrieb, Benutzer- und Rechteverwaltung, Updates, Support sowie technische Dokumentation.</p><span class="evidence-source">Ausbildung und beruflicher Werdegang</span></article>
             <article class="evidence"><h3>Automatisierung &amp; Software</h3><p>Python, PowerShell, Web-Anwendungen und produktnahe Entwicklung für wiederkehrende technische Aufgaben.</p><span class="evidence-source">Öffentliche Repositories und Projekte</span></article>
           </div>
-          <p class="link-row" style="margin-top: 1.5rem"><a class="button button--quiet" href="profile.html#kompetenzen">Profil &amp; Kompetenzen im Detail</a></p>
+          <p class="link-row" style="margin-top: 1.5rem"><a class="button button--quiet" href="/profil#kompetenzen">Profil &amp; Kompetenzen im Detail</a></p>
         </div>
       </section>
 
@@ -205,13 +205,13 @@
               <span class="credential-tile__icon"><i data-feather="git-branch" aria-hidden="true"></i></span><span class="credential-tile__number">03</span><strong>Network Technician Career Path</strong><small>Cisco · 10.07.2026</small>
             </a>
           </div>
-          <p class="link-row" style="margin-top: 1.75rem"><a class="button button--quiet" href="credentials.html">Alle 7 Zertifikate &amp; PDFs</a><a class="button button--quiet" href="https://www.credly.com/users/joshua-pond/" target="_blank" rel="noopener noreferrer">Credly-Profil</a></p>
+          <p class="link-row" style="margin-top: 1.75rem"><a class="button button--quiet" href="/zertifikate">Alle 7 Zertifikate &amp; PDFs</a><a class="button button--quiet" href="https://www.credly.com/users/joshua-pond/" target="_blank" rel="noopener noreferrer">Credly-Profil</a></p>
         </div>
       </section>
 
       <section class="section" id="werdegang">
         <div class="shell career-grid">
-          <div><p class="eyebrow">Werdegang</p><h2>Berufspraxis, Ausbildung und öffentliche Arbeit.</h2><p>Die Profilseite enthält den vollständigen zeitlichen Kontext, die Schwerpunkte jeder Station sowie weitere verifizierbare Referenzen.</p><p class="link-row"><a class="button button--quiet" href="profile.html#werdegang">Werdegang im Detail</a></p></div>
+          <div><p class="eyebrow">Werdegang</p><h2>Berufspraxis, Ausbildung und öffentliche Arbeit.</h2><p>Die Profilseite enthält den vollständigen zeitlichen Kontext, die Schwerpunkte jeder Station sowie weitere verifizierbare Referenzen.</p><p class="link-row"><a class="button button--quiet" href="/profil#werdegang">Werdegang im Detail</a></p></div>
           <div class="timeline">
             <article class="timeline-item"><time datetime="2026-07">Seit 07/2026</time><div><h3>Netzwerkadministrator · Weiss IT Solutions GmbH</h3><p>Aktuelle Tätigkeit in der Netzwerkadministration und im professionellen Kundenumfeld.</p></div></article>
             <article class="timeline-item"><time datetime="2023-08/2026-06">08/2023 – 06/2026</time><div><h3>Systemintegrator · Städtisches Klinikum Wolfenbüttel gGmbH</h3><p>IT-Betrieb im Gesundheitsumfeld: Infrastruktur, Support, Rechteverwaltung, Updates und Dokumentation.</p></div></article>
@@ -227,7 +227,7 @@
         </div>
       </section>
     </main>
-    <footer class="site-footer"><div class="shell footer-inner"><p>© 2026 Joshua Pond</p><p><a href="profile.html">Profil</a> · <a href="projects.html">Projekte</a> · <a href="credentials.html">Nachweise</a></p></div></footer>
+    <footer class="site-footer"><div class="shell footer-inner"><p>© 2026 Joshua Pond</p><p><a href="/profil">Profil</a> · <a href="/projekte">Projekte</a> · <a href="/zertifikate">Nachweise</a></p></div></footer>
     <script src="https://unpkg.com/feather-icons" defer></script>
     <script src="assets/scripts/site.js?v=motion-20260904-3" defer></script>
   </body>

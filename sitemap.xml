@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://portfolio.pondsec.com/</loc>
+    <loc>https://portfolio.pondsec.com/home</loc>
     <lastmod>2026-09-04</lastmod>
   </url>
   <url>
-    <loc>https://portfolio.pondsec.com/profile.html</loc>
+    <loc>https://portfolio.pondsec.com/profil</loc>
     <lastmod>2026-09-04</lastmod>
   </url>
   <url>
-    <loc>https://portfolio.pondsec.com/projects.html</loc>
+    <loc>https://portfolio.pondsec.com/projekte</loc>
     <lastmod>2026-09-04</lastmod>
   </url>
   <url>
-    <loc>https://portfolio.pondsec.com/research.html</loc>
+    <loc>https://portfolio.pondsec.com/forschung</loc>
     <lastmod>2026-09-04</lastmod>
   </url>
   <url>
-    <loc>https://portfolio.pondsec.com/credentials.html</loc>
+    <loc>https://portfolio.pondsec.com/zertifikate</loc>
     <lastmod>2026-09-04</lastmod>
   </url>
 </urlset>
