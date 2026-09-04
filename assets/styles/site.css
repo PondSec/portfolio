@@ -159,6 +159,10 @@ h3 { font-size: 1.08rem; font-weight: 750; letter-spacing: -.015em; line-height:
 .credential-tile__number { position: absolute; top: 1.35rem; right: 1.35rem; color: #7a8ba0; font-family: var(--nav-font); font-size: .68rem; font-weight: 700; letter-spacing: .08em; }
 .credential-tile strong { max-width: 240px; font-family: var(--heading-font); font-size: 1.15rem; line-height: 1.22; }
 .credential-tile small { color: var(--muted); font-size: .78rem; }
+.credential-pdf-links { display: flex; flex-wrap: wrap; gap: .28rem .75rem; margin: 1rem 0 0; color: var(--muted); font-size: .78rem; }
+.credential-pdf-links span { color: var(--heading); font-family: var(--nav-font); font-weight: 700; }
+.credential-pdf-links a { color: var(--blue-dark); font-family: var(--nav-font); font-weight: 700; }
+.credential-pdf-links a::after { content: " ↗"; color: var(--blue); }
 
 .page-hero { padding-bottom: clamp(3.8rem, 6vw, 5.2rem); }
 .page-hero .lede { max-width: 760px; }
