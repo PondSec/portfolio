@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Technische Projekte von Joshua Pond: Ponduin, Inventory Pro, Netzwerk- und Infrastrukturprojekte, technische Dokumentation und Joey's Slimeventure.">
+    <meta name="author" content="Joshua Dean Pond">
+    <meta name="theme-color" content="#050b16">
+    <link rel="canonical" href="https://portfolio.pondsec.com/projects.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Poppins:wght@500;600;700&amp;family=Raleway:wght@600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/site.css">
+    <title>Projekte &amp; Arbeitsproben – Joshua Pond</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Zum Inhalt springen</a>
+    <header class="site-sidebar">
+      <div class="sidebar-mobilebar">
+        <a class="mobile-brand" href="index.html#start">Joshua Pond</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-nav-toggle><span></span><span></span><span></span><span class="visually-hidden">Navigation</span></button>
+      </div>
+      <div class="sidebar-panel">
+        <div class="sidebar-identity">
+          <img class="sidebar-portrait" src="assets/images/joshua-pond.jpg" alt="Porträt von Joshua Pond">
+          <a class="brand" href="index.html#start" aria-label="Joshua Pond – Startseite">Joshua Pond</a>
+          <p class="sidebar-role">Netzwerkadministrator</p>
+          <p class="sidebar-note">Fachinformatiker für Systemintegration. Netzwerkbetrieb, Infrastruktur und technische Dokumentation.</p>
+        </div>
+        <nav class="site-nav" id="site-navigation" data-site-nav aria-label="Hauptnavigation">
+          <a href="index.html#start"><i data-feather="home" aria-hidden="true"></i><span>Start</span></a>
+          <a href="profile.html"><i data-feather="user" aria-hidden="true"></i><span>Profil</span></a>
+          <a href="projects.html" aria-current="page"><i data-feather="layers" aria-hidden="true"></i><span>Projekte</span></a>
+          <a href="research.html"><i data-feather="book-open" aria-hidden="true"></i><span>Forschung</span></a>
+          <a href="credentials.html"><i data-feather="award" aria-hidden="true"></i><span>Nachweise</span></a>
+          <a href="index.html#kontakt"><i data-feather="mail" aria-hidden="true"></i><span>Kontakt</span></a>
+        </nav>
+        <div class="sidebar-links" aria-label="Direkte Links">
+          <a href="https://github.com/PondSec" target="_blank" rel="noopener noreferrer"><i data-feather="github" aria-hidden="true"></i><span>GitHub</span></a>
+          <a href="https://www.credly.com/users/joshua-pond/" target="_blank" rel="noopener noreferrer"><i data-feather="award" aria-hidden="true"></i><span>Credly</span></a>
+          <a href="https://doi.org/10.5281/zenodo.18340275" target="_blank" rel="noopener noreferrer"><i data-feather="book-open" aria-hidden="true"></i><span>Zenodo</span></a>
+          <a href="mailto:joshua@pondsec.com"><i data-feather="mail" aria-hidden="true"></i><span>E-Mail</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero page-hero">
+        <div class="shell">
+          <p class="eyebrow">Projekte &amp; Arbeitsproben</p>
+          <h1>Technische Arbeit, die direkt einsehbar bleibt.</h1>
+          <p class="lede">Die folgenden Projekte decken lokale Agenten-Software, IT-Betrieb, Netzwerk- und Sicherheitskonzepte, Hosting sowie Produktentwicklung ab. Jede Fallstudie nennt den konkreten Kontext und verlinkt zum jeweiligen öffentlichen Nachweis.</p>
+          <div class="hero-actions"><a class="button" href="#ponduin">Projekte lesen</a><a class="button button--quiet" href="https://github.com/PondSec" target="_blank" rel="noopener noreferrer">GitHub-Profil öffnen</a></div>
+        </div>
+      </section>
+
+      <section class="section section--paper">
+        <div class="shell profile-lead">
+          <p>Die Projektliste trennt Produktentwicklung, betriebsnahe Software und Infrastruktur bewusst voneinander. Wo ein Repository, eine Produktseite oder eine technische Dokumentation existiert, ist sie direkt verlinkt. So kann die Einordnung neben dem sichtbaren Ergebnis nachvollzogen werden.</p>
+          <aside class="profile-summary" aria-label="Projektübersicht">
+            <strong>Software</strong><p>Ponduin und Inventory Pro</p>
+            <strong>Infrastruktur</strong><p>OPNsense, Reverse Proxy, Hosting und Switch-Tooling</p>
+            <strong>Produkt</strong><p>Joey's Slimeventure mit Demo und Steam-Seite</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell case-study-list">
+          <article class="case-study" id="ponduin">
+            <header class="case-study__header">
+              <div><p class="eyebrow">Local-first Agent · Rust</p><h2>Ponduin</h2><p>Ein lokaler, erweiterbarer KI-Agent für Code, Terminal, Dateien und technische Mehrschritt-Workflows.</p></div>
+              <div class="case-study__links"><a class="button button--quiet" href="https://ponduin.de" target="_blank" rel="noopener noreferrer">Produktseite</a><a class="button button--quiet" href="https://github.com/PondSec/ponduin" target="_blank" rel="noopener noreferrer">Repository</a></div>
+            </header>
+            <div class="case-study__body">
+              <div><p>Ponduin ist darauf ausgelegt, dort zu arbeiten, wo Projekte und Werkzeuge bereits liegen: im lokalen Arbeitsbereich. Das Projekt verbindet eine Desktop-Anwendung, eine native Kommandozeilenoberfläche und eine Rust-Runtime für Agentenlogik, Werkzeuge und Erweiterungen.</p><p>Der öffentliche Entwicklungsstand beschreibt lokale Ausführung, frei wählbare Provider oder kompatible lokale Modelle, Workspace-bezogene Tool-Zugriffe sowie MCP-kompatible Integrationen. Runtime, Desktop-Umgebung, CLI und Build-Prozess gehören zum veröffentlichten Projektumfang.</p></div>
+              <ul class="case-study__facts"><li><strong>Stack</strong><span>Rust, Electron, React, TypeScript</span></li><li><strong>Oberflächen</strong><span>Desktop-Anwendung und CLI</span></li><li><strong>Fokus</strong><span>Lokale Ausführung, kontrollierter Tool- und Datenzugriff</span></li><li><strong>Nachweis</strong><span>Öffentliches Repository, Dokumentation und Produktseite</span></li></ul>
+            </div>
+          </article>
+
+          <article class="case-study" id="inventory-pro">
+            <header class="case-study__header">
+              <div><p class="eyebrow">IT-Betrieb · Python / Flask</p><h2>Inventory Pro</h2><p>Inventar-, Service-Desk- und Wissensplattform für Assets, Standorte, Beschaffung und Supportprozesse.</p></div>
+              <div class="case-study__links"><a class="button button--quiet" href="https://inv.pondsec.com" target="_blank" rel="noopener noreferrer">Produktseite</a><a class="button button--quiet" href="https://github.com/PondSec/inventorypro" target="_blank" rel="noopener noreferrer">Repository</a></div>
+            </header>
+            <div class="case-study__body">
+              <div><p>Inventory Pro bringt Asset-Lifecycle, Ticketing, Wissensartikel, Standorte und Serviceprozesse in einer Anwendung zusammen. Zu den öffentlich dokumentierten Bausteinen gehören Kategorien, Zuweisungen, Komponenten, Garantien und Beschaffungsdaten ebenso wie Tickets mit SLA, Prioritäten, Anhängen, Kommentaren und Statusverläufen.</p><p>Für den Betriebsbezug relevant sind das Rollen- und Berechtigungssystem, optionale TOTP-Zwei-Faktor-Authentifizierung, auditierbare Änderungsverläufe und dokumentierte Update-Mechanismen. Die gezeigte Dashboard-Abbildung nutzt ausdrücklich synthetische Daten.</p></div>
+              <ul class="case-study__facts"><li><strong>Stack</strong><span>Python, Flask, SQLite, Docker</span></li><li><strong>Module</strong><span>Assets, Tickets, Wissen, Standorte und Change-Reviews</span></li><li><strong>Security</strong><span>RBAC, TOTP-MFA, Audit-Verläufe und geschützte Konfiguration</span></li><li><strong>Nachweis</strong><span>Öffentliches Repository und laufende Produktinstanz</span></li></ul>
+            </div>
+          </article>
+
+          <article class="case-study" id="opnsense">
+            <header class="case-study__header">
+              <div><p class="eyebrow">Netzwerk · Firewall · VPN</p><h2>Segmentierte OPNsense-Infrastruktur</h2><p>Mehrzonige Infrastruktur mit VLANs, DMZ, WireGuard, DNS/DHCP und dokumentierter Sicherheitskette.</p></div>
+              <div class="case-study__links"><a class="button button--quiet" href="assets/documents/opnsense-betriebsdokumentation-anonymisiert.pdf" target="_blank" rel="noopener noreferrer">Anonymisierte Dokumentation</a></div>
+            </header>
+            <div class="case-study__body">
+              <div><p>Das Projekt ordnet Management, Client-Netze, DMZ und Remote-Zugriff in getrennte Rollen und Zonen ein. Neben der technischen Konfiguration stand die reproduzierbare Beschreibung des Betriebszustands im Vordergrund: Änderungen, Fehlersuche und Wiederaufbau sollen nachvollziehbar bleiben.</p><p>Die anonymisierte Betriebs- und Reproduktionsdokumentation beschreibt Architektur, Segmentierung, Recovery, Abnahmekriterien und die Sicherheitskette von Layer 2 bis Layer 7. Sie ist als technischer Nachweis auf dieser Seite direkt einsehbar.</p></div>
+              <ul class="case-study__facts"><li><strong>Komponenten</strong><span>VLANs, DMZ, WireGuard, DNS/DHCP und Reverse-Proxy-nahe Strukturen</span></li><li><strong>Fokus</strong><span>Segmentierung, Zugriffspfade und Wiederherstellbarkeit</span></li><li><strong>Kontext</strong><span>Ausbildungsnah vertieft und dokumentiert</span></li><li><strong>Nachweis</strong><span>Anonymisierte Betriebs- und Reproduktionsdokumentation</span></li></ul>
+            </div>
+          </article>
+
+          <article class="case-study" id="hosting">
+            <header class="case-study__header">
+              <div><p class="eyebrow">Hosting · Reverse Proxy · TLS</p><h2>Self-hosted Dienste und Veröffentlichung</h2><p>Planung und Betrieb eigener öffentlich erreichbarer Dienste mit Domain-Routing, Reverse Proxy und Zertifikaten.</p></div>
+              <div class="case-study__links"><a class="button button--quiet" href="https://pondsec.com" target="_blank" rel="noopener noreferrer">PondSec öffnen</a><a class="button button--quiet" href="https://github.com/PondSec" target="_blank" rel="noopener noreferrer">GitHub öffnen</a></div>
+            </header>
+            <div class="case-study__body">
+              <div><p>Eigene Dienste werden über Domain-bezogene Einstiege, Reverse-Proxy-Strukturen und TLS-Zertifikate veröffentlicht. Der relevante Teil dieser Arbeit ist das Zusammenspiel aus Erreichbarkeit, Routing, klarer Trennung interner Komponenten und langfristiger Pflege der Dienste.</p><p>PondSec fungiert dabei als öffentliches Projektportal. Es bündelt die erreichbaren Produktseiten, Repositories, das Portfolio sowie weitere technische Experimente, ohne interne Infrastrukturinformationen offenzulegen.</p></div>
+              <ul class="case-study__facts"><li><strong>Fokus</strong><span>Domains, Routing, Reverse Proxy und TLS-Zertifikate</span></li><li><strong>Kontext</strong><span>Self-hosted Web- und Projektdienste</span></li><li><strong>Sichtbar</strong><span>PondSec, Portfolio, Produktseiten und GitHub</span></li><li><strong>Nachweis</strong><span>Öffentlich erreichbare Seiten und Repositories</span></li></ul>
+            </div>
+          </article>
+
+          <article class="case-study" id="switchmanager">
+            <header class="case-study__header">
+              <div><p class="eyebrow">Switching · SSH · Audit</p><h2>SwitchManager</h2><p>Unterstützendes Werkzeug für wiederkehrende Switch-Aufgaben wie VLAN-Zuweisungen, Portlogik und kontrollierte Infrastrukturaktionen.</p></div>
+              <div class="case-study__links"><a class="button button--quiet" href="https://github.com/PondSec/SwitchManager" target="_blank" rel="noopener noreferrer">Repository</a></div>
+            </header>
+            <div class="case-study__body">
+              <div><p>SwitchManager untersucht, wie sich typische Infrastrukturaktionen nachvollziehbar und rollenbasiert abbilden lassen. Der Ansatz verbindet einen SSH-Layer für die technische Anbindung mit einer klaren Bedienlogik für Port-, VLAN- und Systemaktionen.</p><p>Das Projekt ist als betriebsnahes Tooling angelegt: Rollenmodell und Audit-Logging binden wiederkehrende Aktionen in einen prüfbaren Ablauf ein.</p></div>
+              <ul class="case-study__facts"><li><strong>Technik</strong><span>Python, Flask, SSH und Logging</span></li><li><strong>Funktionen</strong><span>VLAN-, Port- und Systemaktionen</span></li><li><strong>Fokus</strong><span>Kontrollierte Bedienung und Auditierbarkeit</span></li><li><strong>Nachweis</strong><span>Öffentliches GitHub-Repository</span></li></ul>
+            </div>
+          </article>
+
+          <article class="case-study" id="joeys-slimeventure">
+            <header class="case-study__header">
+              <div><p class="eyebrow">Produktentwicklung · Godot</p><h2>Joey's Slimeventure</h2><p>Öffentlich entwickeltes 2D-Action-Platformer-Projekt mit Demo, Steam-Seite und offenem Quellcode.</p></div>
+              <div class="case-study__links"><a class="button button--quiet" href="https://joeyslime.com" target="_blank" rel="noopener noreferrer">Projektseite</a><a class="button button--quiet" href="https://github.com/PondSec/JoeysSlimeventure" target="_blank" rel="noopener noreferrer">Repository</a></div>
+            </header>
+            <div class="case-study__body">
+              <div><p>Joey's Slimeventure zeigt Produktarbeit außerhalb des Infrastrukturkontexts: ein spielbares Projekt mit eigener Webpräsenz, Browser-Demo, Steam-Einstieg, Wiki und Entwicklungsrepository. Die veröffentlichte Open-Source-Version wird als frühe Alpha-Version geführt.</p><p>Das Projekt nutzt die Godot Engine und dokumentiert klassische Platforming-Mechaniken, Gegner und Mini-Bosse, Fortschrittssysteme sowie Steuerung und Installationswege. Es belegt auch die Fähigkeit, ein technisches Produkt über Code hinaus öffentlich bereitzustellen und zu pflegen.</p></div>
+              <ul class="case-study__facts"><li><strong>Engine</strong><span>Godot Engine</span></li><li><strong>Bereitstellung</strong><span>Web, Steam und Open-Source-Repository</span></li><li><strong>Status</strong><span>Öffentlich dokumentierte frühe Alpha-Version</span></li><li><strong>Nachweis</strong><span>Projektseite, Demo, Steam und GitHub</span></li></ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--accent">
+        <div class="shell research-layout">
+          <div><p class="eyebrow">Forschung als vertiefende Arbeitsprobe</p><h2>Load Balancing mit messbarem Laboraufbau.</h2><p class="research-copy">Die unabhängige Forschungsarbeit ergänzt die Projektprofile um eine detailliert veröffentlichte Methode, Messprotokolle und eine nachvollziehbare Einordnung der Grenzen.</p></div>
+          <div class="metric-stack"><div class="metric"><strong>Zenodo</strong><span>Öffentlicher Record mit DOI und vollständigem Text.</span></div><div class="metric"><strong>50×</strong><span>Wiederholungen je Vergleichsverfahren im dokumentierten Versuchsdesign.</span></div><div class="metric"><strong>3,2 s</strong><span>Dokumentierte Ausfallerkennung im Fehlerszenario.</span></div><div class="hero-actions" style="margin-top:1.4rem"><a class="button button--quiet" href="research.html">Forschung lesen</a></div></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="shell footer-inner"><p>© 2026 Joshua Pond</p><p><a href="index.html">Startseite</a> · <a href="profile.html">Profil</a> · <a href="credentials.html">Nachweise</a></p></div></footer>
+    <script src="https://unpkg.com/feather-icons" defer></script>
+    <script src="assets/scripts/site.js" defer></script>
+  </body>
+</html>
