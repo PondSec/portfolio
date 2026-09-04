@@ -28,68 +28,56 @@ if (!prefersReducedMotion) {
       .split('|')
       .map((word) => word.trim())
       .filter(Boolean);
-    let wordIndex = 0;
-    let characterIndex = words[0]?.length || 0;
-    let isDeleting = false;
+    const word = words[0];
+    let characterIndex = 0;
 
     const type = () => {
-      const word = words[wordIndex];
       if (!word) return;
 
-      if (!isDeleting && characterIndex < word.length) {
+      if (characterIndex < word.length) {
         characterIndex += 1;
         typewriter.textContent = word.slice(0, characterIndex);
-        window.setTimeout(type, 54);
+        window.setTimeout(type, 48);
         return;
       }
 
-      if (!isDeleting) {
-        isDeleting = true;
-        window.setTimeout(type, 1700);
-        return;
-      }
-
-      if (characterIndex > 0) {
-        characterIndex -= 1;
-        typewriter.textContent = word.slice(0, characterIndex);
-        window.setTimeout(type, 30);
-        return;
-      }
-
-      isDeleting = false;
-      wordIndex = (wordIndex + 1) % words.length;
-      window.setTimeout(type, 220);
+      typewriter.closest('.typing-wrap')?.setAttribute('data-typing-complete', 'true');
     };
 
-    window.setTimeout(type, 1200);
+    typewriter.textContent = '';
+    window.setTimeout(type, 360);
   }
 
-  const revealTargets = document.querySelectorAll([
-    '.section-heading', '.signal', '.project', '.research-layout', '.evidence',
-    '.credential-tile', '.career-grid', '.contact-grid', '.profile-lead',
-    '.detail-grid > article', '.case-study', '.reference-grid a',
+  const motionStages = document.querySelectorAll([
+    '.section-heading', '.signal-list', '.project-list', '.research-layout',
+    '.evidence-grid', '.credential-grid', '.career-grid', '.contact-grid',
+    '.profile-lead', '.detail-grid', '.case-study', '.reference-grid',
     '.research-overview', '.method-list', '.limits'
   ].join(', '));
 
-  const reveal = (target) => target.classList.add('is-revealed');
+  motionStages.forEach((stage) => stage.classList.add('motion-stage'));
 
-  revealTargets.forEach((target, index) => {
-    target.classList.add('reveal');
-    target.style.setProperty('--reveal-delay', `${(index % 4) * 65}ms`);
-  });
+  const hasScrollTimeline = CSS.supports('animation-timeline: view()');
 
-  if ('IntersectionObserver' in window) {
+  if (hasScrollTimeline) {
+    document.documentElement.classList.add('motion-timeline');
+  } else if ('IntersectionObserver' in window) {
+    document.documentElement.classList.add('motion-fallback');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          reveal(entry.target);
+          entry.target.style.willChange = 'transform, opacity';
+          window.requestAnimationFrame(() => entry.target.classList.add('is-revealed'));
+          entry.target.addEventListener('transitionend', () => {
+            entry.target.style.removeProperty('will-change');
+          }, { once: true });
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
+    }, { threshold: 0.05, rootMargin: '0px 0px -12% 0px' });
 
-    revealTargets.forEach((target) => observer.observe(target));
+    motionStages.forEach((stage) => observer.observe(stage));
   } else {
-    revealTargets.forEach(reveal);
+    motionStages.forEach((stage) => stage.classList.add('is-revealed'));
   }
 }
